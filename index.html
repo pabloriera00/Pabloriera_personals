@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neon Audio Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header>
+      <h1>Neon Audio Visualizer</h1>
+      <p>Load music or select a sample and watch bass, guitar, drums, and voice come alive.</p>
+    </header>
+
+    <div class="controls">
+      <input id="audio-file" type="file" accept="audio/*" style="display:none" />
+      <button id="play-toggle">Play</button>
+      <button id="restart-btn">Restart</button>
+
+      <label class="file-label">
+        Setlist
+        <select id="sample-select"></select>
+      </label>
+      <button id="random-sample">Random</button>
+    </div>
+
+    <div class="visual-wrap">
+      <div class="canvas-holder">
+        <canvas id="visualizer"></canvas>
+      </div>
+      <button id="fullscreen-btn" class="fullscreen-btn">Fullscreen</button>
+    </div>
+
+    <footer>
+      <p>Tip: try bass-heavy music and watch the spotlight glow, squares flash, and waves pulse with the rhythm.</p>
+    </footer>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
