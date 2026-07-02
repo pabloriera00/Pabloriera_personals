@@ -1,44 +1,47 @@
-# Pabloriera_personals
+# Neon Audio Visualizer
 
-Personal projects repository.
+A browser-based audio visualizer with animated neon shapes, reactive waves, a curated setlist, and fullscreen playback controls.
 
-## 🌐 Live Site (GitHub Pages)
+## Features
 
-Once Pages is enabled, your site will be available at:
+- Load your own local audio file
+- Play tracks from the built-in setlist
+- Random track selection
+- Auto-advance to the next track when a song ends
+- Keyboard shortcuts for restart, random, and fullscreen controls
+- Fullscreen visual mode
+- Vintage CRT-style static/grain screen effect
 
-https://pabloriera00.github.io/Pabloriera_personals/
+## Project Files
 
-## 🚀 How to enable GitHub Pages
+- `index.html` - app structure and controls
+- `style.css` - visual styling and fullscreen/button layout
+- `index.js` - audio analysis, rendering logic, controls, and interactions
 
-1. Go to **Settings** in this repository.
-2. Click **Pages** in the left sidebar.
-3. Under **Build and deployment**:
-	 - **Source**: `Deploy from a branch`
-	 - **Branch**: `main`
-	 - **Folder**: `/ (root)` (or `/docs` if your site files are there)
+## Run Locally
+
+Option 1:
+Open `index.html` directly in your browser.
+
+Option 2 (recommended):
+Use a local web server (for example VS Code Live Server).
+
+## GitHub Pages Deployment
+
+1. Push this project to GitHub.
+2. Open repository `Settings` -> `Pages`.
+3. Under `Build and deployment` set:
+   - `Source`: `Deploy from a branch`
+   - `Branch`: `main`
+   - `Folder`: `/ (root)`
 4. Save and wait a few minutes.
 
-## ✅ Commit and push changes
+Live URL format:
 
-```bash
-git add README.md
-git commit -m "Update README with GitHub Pages setup"
-git push origin main
-```
+`https://pabloriera00.github.io/Pabloriera_personals/`
 
-## 🛠 If commit fails
+## Notes
 
-If Git says identity is missing, run:
-
-```bash
-git config --global user.name "pabloriera00"
-git config --global user.email "priera1@lsu.edu"
-```
-
-Then retry commit/push.
-
-## 📁 Notes
-
-- If this is a React/Vite app, you may need to set a base path:
-	- Vite: `base: "/Pabloriera_personals/"`
-	- CRA: `"homepage": "https://pabloriera00.github.io/Pabloriera_personals"`
+- If Pages returns 404 right after enabling, wait 1-3 minutes and refresh.
+- Ensure `index.html` stays in repository root for root deployment.
+- If you publish with copyrighted songs, make sure you have permission to redistribute them.
