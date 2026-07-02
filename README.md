@@ -1,21 +1,44 @@
-# Neon Audio Visualizer
+# Pabloriera_personals
 
-A simple web audio visualizer that shows:
-- bass-driven spotlight color changes
-- guitar-reactive flashing square pattern
-- neon central shape that changes size with drums
-- a bottom waveform that pulses with voice/harmony
+Personal projects repository.
 
-## How to use
+## 🌐 Live Site (GitHub Pages)
 
-1. Open `audio-visualizer.code-workspace` in VS Code.
-2. Open `index.html` in the browser or use a live server extension.
-3. Click `Use Superlove` or choose your own audio file.
-4. Press `Play` to start the visualization.
+Once Pages is enabled, your site will be available at:
 
-## Files
+https://pabloriera00.github.io/Pabloriera_personals/
 
-- `index.html` — main page and canvas container.
-- `style.css` — neon theme styling.
-- `index.js` — web audio and canvas visualization logic.
-- `audio-visualizer.code-workspace` — VS Code workspace file.
+## 🚀 How to enable GitHub Pages
+
+1. Go to **Settings** in this repository.
+2. Click **Pages** in the left sidebar.
+3. Under **Build and deployment**:
+	 - **Source**: `Deploy from a branch`
+	 - **Branch**: `main`
+	 - **Folder**: `/ (root)` (or `/docs` if your site files are there)
+4. Save and wait a few minutes.
+
+## ✅ Commit and push changes
+
+```bash
+git add README.md
+git commit -m "Update README with GitHub Pages setup"
+git push origin main
+```
+
+## 🛠 If commit fails
+
+If Git says identity is missing, run:
+
+```bash
+git config --global user.name "pabloriera00"
+git config --global user.email "priera1@lsu.edu"
+```
+
+Then retry commit/push.
+
+## 📁 Notes
+
+- If this is a React/Vite app, you may need to set a base path:
+	- Vite: `base: "/Pabloriera_personals/"`
+	- CRA: `"homepage": "https://pabloriera00.github.io/Pabloriera_personals"`
